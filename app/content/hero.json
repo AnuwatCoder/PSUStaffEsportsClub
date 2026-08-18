@@ -1,0 +1,32 @@
+{
+  "eyebrow": "Campus Gaming Community 2026",
+  "title": "PSU STAFF ESPORTS CLUB",
+  "subtitle": "Play Together. Compete Together. Win Together.",
+  "description": "ชมรมสำหรับเกมเมอร์ นักกีฬาอีสปอร์ต และสายครีเอเตอร์ที่ต้องการพัฒนาฝีมือ สร้างทีม ลงแข่งขัน และเติบโตไปพร้อมกับคอมมูนิตี้มืออาชีพ",
+  "backgroundImage": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1800&q=80",
+  "primaryCta": {
+    "label": "ดูการแข่งขัน",
+    "href": "#tournament"
+  },
+  "secondaryCta": {
+    "label": "Contact",
+    "href": "#contact"
+  },
+  "stats": [
+    {
+      "value": "120+",
+      "label": "Members",
+      "color": "text-cyan-300"
+    },
+    {
+      "value": "8",
+      "label": "Teams",
+      "color": "text-violet-300"
+    },
+    {
+      "value": "Live",
+      "label": "League",
+      "color": "text-lime-300"
+    }
+  ]
+}

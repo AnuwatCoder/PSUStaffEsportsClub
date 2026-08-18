@@ -1,0 +1,34 @@
+{
+  "eyebrow": "Players",
+  "title": "นักกีฬาและสมาชิก",
+  "items": [
+    {
+      "nickname": "Phoenix",
+      "name": "อาทิตย์ วงศ์ชนะ",
+      "role": "VALORANT / Duelist",
+      "color": "text-cyan-300",
+      "avatar": "P"
+    },
+    {
+      "nickname": "NightFox",
+      "name": "นภัสสร แก้วกล้า",
+      "role": "RoV / Jungle",
+      "color": "text-violet-300",
+      "avatar": "N"
+    },
+    {
+      "nickname": "ZeroX",
+      "name": "ปกรณ์ ศรีวัฒน์",
+      "role": "Free Fire / IGL",
+      "color": "text-lime-300",
+      "avatar": "Z"
+    },
+    {
+      "nickname": "Shadow",
+      "name": "ธนกฤต ใจมั่น",
+      "role": "MLBB / Mid Lane",
+      "color": "text-cyan-300",
+      "avatar": "S"
+    }
+  ]
+}

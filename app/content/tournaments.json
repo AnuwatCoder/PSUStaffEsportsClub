@@ -1,0 +1,10 @@
+{
+  "eyebrow": "Tournament",
+  "title": "การแข่งขันล่าสุด",
+  "items": [
+    { "status": "Upcoming", "title": "Campus Valorant Clash", "game": "VALORANT", "date": "10 Sep 2026", "teams": "16 Teams", "prize": "Prize 20,000 THB", "color": "cyan" },
+    { "status": "Live", "title": "RoV Neon League", "game": "RoV", "date": "17 Aug 2026", "teams": "12 Teams", "prize": "Prize 15,000 THB", "color": "red" },
+    { "status": "Finished", "title": "Free Fire Battle Night", "game": "Free Fire", "date": "30 Jul 2026", "teams": "24 Teams", "prize": "Prize 10,000 THB", "color": "violet" }
+  ],
+  "match": { "home": "TEAM ALPHA", "away": "TEAM OMEGA", "game": "VALORANT", "score": "13 : 9" }
+}
