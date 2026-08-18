@@ -2,17 +2,10 @@
   "eyebrow": "Contact",
   "title": "ติดต่อชมรม",
   "items": [
-    { "icon": "fa-brands fa-facebook", "text": "Facebook: PSU Staff Esports Club Official" },
-    { "icon": "fa-brands fa-discord", "text": "Discord: discord.gg/psustaffesports" },
-    { "icon": "fa-brands fa-instagram", "text": "Instagram: @psustaffesports" },
-    { "icon": "fa-solid fa-envelope", "text": "Email: psustaffesports@example.com" },
-    { "icon": "fa-solid fa-location-dot", "text": "ที่ตั้งชมรม: อาคารกิจกรรมนักศึกษา ชั้น 2" }
+    { "icon": "fa-brands fa-discord", "text": "Discord: -" }
   ],
   "socialTitle": "Social Channels",
   "socials": [
-    { "label": "Facebook", "icon": "fa-brands fa-facebook-f", "href": "#" },
-    { "label": "Discord", "icon": "fa-brands fa-discord", "href": "#" },
-    { "label": "Instagram", "icon": "fa-brands fa-instagram", "href": "#" },
-    { "label": "Email", "icon": "fa-solid fa-envelope", "href": "#" }
+    { "label": "Discord", "icon": "fa-brands fa-discord", "href": "#"}
   ]
 }
