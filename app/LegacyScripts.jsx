@@ -75,6 +75,55 @@ export default function LegacyScripts({ activities = [] }) {
   }, []);
 
   useEffect(() => {
+    const navLinks = Array.from(document.querySelectorAll("[data-nav-link]"));
+    const sections = navLinks
+      .map((link) => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    if (!navLinks.length || !sections.length) return;
+
+    const setActiveLink = (sectionId) => {
+      navLinks.forEach((link) => {
+        const isActive = link.getAttribute("href") === `#${sectionId}`;
+        link.classList.toggle("nav-link-active", isActive);
+        if (isActive) {
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntry = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visibleEntry?.target?.id) {
+          setActiveLink(visibleEntry.target.id);
+        }
+      },
+      {
+        rootMargin: "-35% 0px -50% 0px",
+        threshold: [0.15, 0.35, 0.6],
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    const currentSection =
+      sections.find((section) => {
+        const rect = section.getBoundingClientRect();
+        return rect.top <= window.innerHeight * 0.42 && rect.bottom >= window.innerHeight * 0.42;
+      }) || sections[0];
+
+    setActiveLink(currentSection.id);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
     const activityDetails = Object.fromEntries(activities.map((activity) => [activity.id, activity]));
 
     const activityDetail = document.getElementById("activity-detail");
